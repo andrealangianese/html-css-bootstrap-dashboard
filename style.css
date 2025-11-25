@@ -1,0 +1,15 @@
+.nav-link {
+    color: antiquewhite;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(185 141 141);
+}
+
+.nav-link:hover {
+    color: brown;
+}
+
+.nav-link:focus {
+    color: greenyellow;
+}
