@@ -13,3 +13,7 @@
 .nav-link:focus {
     color: greenyellow;
 }
+
+.accordion-item {
+    border: 0;
+}
