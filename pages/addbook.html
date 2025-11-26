@@ -17,7 +17,7 @@
                 <a class="navbar-brand" href="../index.html">
                     <img style="max-width: 50px;" src="../img1/duck.png" alt="logo duck">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -46,73 +46,95 @@
         </nav>
     </header>
     <main>
-        <h1>ciaobella</h1>
+
         <!-- formm........................................ -->
         <div class="container">
             <div class="row">
+                <h1 class="pt-5">Nuovo Libro</h1>
                 <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-md-4">
-                        <label for="validationCustom01" class="form-label">First name</label>
-                        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                    <div class="col-6 ">
+                        <label for="validationCustom01" class="form-label">Nome autore</label>
+                        <input type="text" class="form-control" id="validationCustom01"
+                            placeholder="Inserisci il nome dell'autore" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <label for="validationCustom02" class="form-label">Last name</label>
-                        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                    <div class="col-6">
+                        <label for="validationCustom02" class="form-label">Cognome autore</label>
+                        <input type="text" class="form-control" id="validationCustom02"
+                            placeholder="Inserisci il cognome dell'autore" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <label for="validationCustomUsername" class="form-label">Username</label>
+                    <div class="col-12 ">
+                        <!-- <label for="validationCustomUsername" class="form-label">Titolo</label>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend">@</span>
-                            <input type="text" class="form-control" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" required>
+                            <input type="text" class="form-control" id="validationbooktitle" 
+                                placeholder="inserisci il titolo del libro" required>
+                               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> 
                             <div class="invalid-feedback">
-                                Please choose a username.
+                                Please choose a valid title.
                             </div>
+                        </div> -->
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Titolo</label>
+                            <input type="email" class="form-control" placeholder="Inserisci il titolo del libro" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Titolo versione italiana</div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <label for="validationCustom03" class="form-label">City</label>
-                        <input type="text" class="form-control" id="validationCustom03" required>
-                        <div class="invalid-feedback">
-                            Please provide a valid city.
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="validationCustom04" class="form-label">State</label>
+                    <div class="col-12 col-md-4">
+                        <label for="validationCustom04" class="form-label">Genere</label>
                         <select class="form-select" id="validationCustom04" required>
-                            <option selected disabled value="">Choose...</option>
-                            <option>...</option>
+                            <option selected disabled value="">Scegli il genere</option>
+                            <option>Horror</option>
+                            <option>Fantasy</option>
+                            <option>Comic</option>
+                            <option>Commedy</option>
+                            <option>History</option>
+                            <option>Scientific</option>
+                            <option>Romantic</option>
                         </select>
                         <div class="invalid-feedback">
-                            Please select a valid state.
+                            Please select a valid gender.
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <label for="validationCustom05" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="col-12 col-md-4">
+                        <label for="validationCustom03" class="form-label">Anno di pubblicazione</label>
+                        <input type="date" class="form-control" id="validationCustom03" placeholder="inserisci l'anno"
+                            required>
+                        <div class="invalid-feedback">
+                            inserisci un anno di pubblicazione adeguato.
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <label for="validationCustom05" class="form-label">ISBN#</label>
+                        <input type="number" maxlength="18" class="form-control" id="validationCustom05"
+                            placeholder="inserisci il codice ISBN# " required>
                         <div class="invalid-feedback">
                             Please provide a valid zip.
                         </div>
+                    </div>
+                    <div class="border-top border-1 border-secondary my-5">
+
+                    </div>
+                    <div class="col-12">
+                        <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Inserisci eventuali note" rows="4" col="80"></textarea>
                     </div>
                     <div class="col-12">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                             <label class="form-check-label" for="invalidCheck">
-                                Agree to terms and conditions
+                                Disponibile anche in versione digitale.
                             </label>
-                            <div class="invalid-feedback">
-                                You must agree before submitting.
-                            </div>
                         </div>
                     </div>
                     <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <button class="btn btn-primary" type="submit">Aggiungi libro</button>
                     </div>
                 </form>
                 <a href="../index.html">Puoi cliccare su di me o su quella fantastica icona (la Paperella) per tornare
